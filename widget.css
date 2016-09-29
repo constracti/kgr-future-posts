@@ -1,0 +1,38 @@
+.postcal-head {
+	text-align: center;
+}
+
+.postcal-navigate {
+	text-decoration: none;
+}
+
+.postcal-prev {
+	float: left;
+}
+
+.postcal-next {
+	float: right;
+}
+
+.postcal-container table, .postcal-container th, .postcal-container td {
+	border: none;
+}
+
+.postcal-container th, .postcal-container td {
+	padding: 0px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.postcal-today {
+	background-color: Yellow;
+}
+
+.postcal-nonempty {
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.postcal-post {
+	display: none;
+}

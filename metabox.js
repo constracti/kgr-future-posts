@@ -15,8 +15,8 @@ jQuery( '#postcal-save' ).click( function() {
 	var spinner = jQuery( '#postcal-spinner' ).addClass( 'is-active' );
 	var data = {};
 	if ( check.prop( 'checked' ) )
-		data.postcal_check = check.val();
-	data.postcal_date = input.val();
+		data.check = check.val();
+	data.date = input.val();
 	jQuery.post( link.prop( 'href' ), data, function( data ) {
 		if ( typeof( data ) === 'object' ) {
 			check.prop( 'checked', data.check ).change();
