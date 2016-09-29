@@ -1,0 +1,136 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-29 19:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: ../../../../../../repositories/postcal/metabox.php:16
+msgid "Link this post to a date."
+msgstr ""
+
+#: ../../../../../../repositories/postcal/metabox.php:21
+msgid "Date"
+msgstr ""
+
+#: ../../../../../../repositories/postcal/metabox.php:27
+msgid "Save"
+msgstr ""
+
+#: ../../../../../../repositories/postcal/metabox.php:54
+msgid "date not specified"
+msgstr ""
+
+#: ../../../../../../repositories/postcal/widget.php:15
+msgid ""
+"Displays a calendar widget. When a day is selected, linked posts appear "
+"below."
+msgstr ""
+
+#. Name of the plugin
+#: ../../../../../../repositories/postcal/widget.php:17
+msgid "Post Calendar"
+msgstr ""
+
+#: ../../../../../../repositories/postcal/widget.php:36
+msgid "Title"
+msgstr ""
+
+#: ../../../../../../repositories/postcal/widget.php:74
+msgid "January"
+msgstr ""
+
+#: ../../../../../../repositories/postcal/widget.php:75
+msgid "February"
+msgstr ""
+
+#: ../../../../../../repositories/postcal/widget.php:76
+msgid "March"
+msgstr ""
+
+#: ../../../../../../repositories/postcal/widget.php:77
+msgid "April"
+msgstr ""
+
+#: ../../../../../../repositories/postcal/widget.php:78
+msgid "May"
+msgstr ""
+
+#: ../../../../../../repositories/postcal/widget.php:79
+msgid "June"
+msgstr ""
+
+#: ../../../../../../repositories/postcal/widget.php:80
+msgid "July"
+msgstr ""
+
+#: ../../../../../../repositories/postcal/widget.php:81
+msgid "August"
+msgstr ""
+
+#: ../../../../../../repositories/postcal/widget.php:82
+msgid "September"
+msgstr ""
+
+#: ../../../../../../repositories/postcal/widget.php:83
+msgid "October"
+msgstr ""
+
+#: ../../../../../../repositories/postcal/widget.php:84
+msgid "November"
+msgstr ""
+
+#: ../../../../../../repositories/postcal/widget.php:85
+msgid "December"
+msgstr ""
+
+#: ../../../../../../repositories/postcal/widget.php:92
+msgid "Sun"
+msgstr ""
+
+#: ../../../../../../repositories/postcal/widget.php:93
+msgid "Mon"
+msgstr ""
+
+#: ../../../../../../repositories/postcal/widget.php:94
+msgid "Tue"
+msgstr ""
+
+#: ../../../../../../repositories/postcal/widget.php:95
+msgid "Wed"
+msgstr ""
+
+#: ../../../../../../repositories/postcal/widget.php:96
+msgid "Thu"
+msgstr ""
+
+#: ../../../../../../repositories/postcal/widget.php:97
+msgid "Fri"
+msgstr ""
+
+#: ../../../../../../repositories/postcal/widget.php:98
+msgid "Sat"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Links selected posts to a date and displays them in a relevant calendar "
+"widget."
+msgstr ""
+
+#. URI of the plugin
+msgid "https://github.com/constracti/postcal"
+msgstr ""
+
+#. Author of the plugin
+msgid "constracti"
+msgstr ""

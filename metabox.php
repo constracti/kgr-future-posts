@@ -6,7 +6,7 @@ if ( !defined( 'ABSPATH' ) )
 add_action( 'add_meta_boxes', function() {
 	if ( !current_user_can( 'edit_posts' ) )
 		return;
-	add_meta_box( 'postcaldiv', 'Post Calendar', function( $post ) {
+	add_meta_box( 'postcaldiv', __( 'Post Calendar', 'postcal' ), function( $post ) {
 		$meta = get_post_meta( $post->ID, 'postcal', TRUE );
 		$url = admin_url( 'admin-ajax.php?action=postcal_metabox&post=' . $post->ID );
 ?>
