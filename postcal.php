@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Post Calendar
-Plugin URI: https://github.com/constracti/post-calendar
+Plugin URI: https://github.com/constracti/postcal
 Description: Assign a date to every post and display a relative calendar.
 Author: constracti
 Version: 1.0
@@ -11,6 +11,8 @@ Text Domain: postcal
 
 if ( !defined( 'ABSPATH' ) )
 	exit;
+
+exit( plugin_basename( __FILE__ ) );
 
 require_once plugin_dir_path( __FILE__ ) . 'metabox.php';
 require_once plugin_dir_path( __FILE__ ) . 'widget.php';
