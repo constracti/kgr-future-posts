@@ -99,7 +99,7 @@ function postcal_weekdays(): array {
 	);
 }
 
-add_action( 'wp_ajax_postcal_widget', function() {
+function postcall_widget_callback() {
 	$dt = new DateTime();
 	$today = $dt->format( 'Y-m-d' );
 	$curr = DateTime::createFromFormat( 'Y-m-d', sprintf( '%s-%s-01', $_REQUEST['year'] ?? '', $_REQUEST['month'] ?? '' ) );
@@ -190,4 +190,6 @@ add_action( 'wp_ajax_postcal_widget', function() {
 </div>
 <?php
 	exit;
-} );
+}
+add_action( 'wp_ajax_postcal_widget', 'postcall_widget_callback' );
+add_action( 'wp_ajax_nopriv_postcal_widget', 'postcall_widget_callback' );
