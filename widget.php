@@ -12,7 +12,7 @@ class postcal_widget extends WP_Widget {
 	public function __construct() {
 		$widget_ops = array(
 			'classname' => 'postcal_widget',
-			'description' => __( 'Displays a calendar with posts according to plugin Post Calendar.', 'postcal' ),
+			'description' => __( 'Displays a calendar widget. When a day is selected, linked posts appear below.', 'postcal' ),
 		);
 		parent::__construct( 'postcal_widget', __( 'Post Calendar', 'postcal' ), $widget_ops );
 	}

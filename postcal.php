@@ -2,7 +2,7 @@
 /*
 Plugin Name: Post Calendar
 Plugin URI: https://github.com/constracti/postcal
-Description: Assign a date to every post and display a relative calendar.
+Description: Links selected posts to a date and displays them in a relevant calendar widget.
 Author: constracti
 Version: 1.0
 Author URI: https://raktivan.tk/

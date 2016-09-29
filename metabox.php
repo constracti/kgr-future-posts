@@ -13,7 +13,7 @@ add_action( 'add_meta_boxes', function() {
 <p>
 	<label>
 		<input id="postcal-check" type="checkbox" value="on"<?php checked( $meta !== '' ); ?> autocomplete="off" />
-		<span><?= esc_html__( 'Assign a date to this post.', 'postcal' ) ?></span>
+		<span><?= esc_html__( 'Link this post to a date.', 'postcal' ) ?></span>
 	</label>
 </p>
 <p id="postcal-container">
