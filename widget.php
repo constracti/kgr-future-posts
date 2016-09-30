@@ -101,6 +101,7 @@ function postcal_weekdays(): array {
 
 function postcall_widget_callback() {
 	$dt = new DateTime();
+	$dt->setTimestamp( current_time( 'timestamp' ) );
 	$today = $dt->format( 'Y-m-d' );
 	$curr = DateTime::createFromFormat( 'Y-m-d', sprintf( '%s-%s-01', $_REQUEST['year'] ?? '', $_REQUEST['month'] ?? '' ) );
 	if ( $curr !== FALSE )
