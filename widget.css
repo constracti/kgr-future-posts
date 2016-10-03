@@ -14,18 +14,33 @@
 	float: right;
 }
 
-.postcal-container table, .postcal-container th, .postcal-container td {
-	border: none;
+.postcal-container table {
+	border-color: RoyalBlue;
+	border-radius: 2px;
+	border-style: double;
+	border-width: medium;
 }
 
 .postcal-container th, .postcal-container td {
+	border: none;
 	padding: 0px;
 	text-align: center;
 	vertical-align: middle;
 }
 
-.postcal-today {
-	background-color: Yellow;
+.postcal-container th {
+	background-color: SkyBlue;
+	border-bottom-color: RoyalBlue;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+}
+
+td.postcal-today {
+	background-color: SkyBlue;
+	border-color: RoyalBlue;
+	border-radius: 2px;
+	border-style: solid;
+	border-width: thin;
 }
 
 .postcal-nonempty {
