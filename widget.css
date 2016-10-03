@@ -15,6 +15,7 @@
 }
 
 .postcal-container table {
+	border-collapse: separate;
 	border-color: RoyalBlue;
 	border-radius: 2px;
 	border-style: double;
@@ -44,6 +45,7 @@ td.postcal-today {
 }
 
 .postcal-nonempty {
+	color: RoyalBlue;
 	cursor: pointer;
 	font-weight: bold;
 }
