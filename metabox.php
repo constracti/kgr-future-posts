@@ -41,7 +41,7 @@ add_action( 'add_meta_boxes', function() {
 <p>
 	<small class="dashicons-before dashicons-warning">
 		<span><?= esc_html__( 'Currently, Internet Explorer and Mozilla Firefox do not support the input date element.', 'postcal' ) ?></span>
-		<span><?= esc_html__( 'Use date format YYYY-MM-DD instead.', 'postcal' ) ?></span>
+		<span><?= esc_html__( 'Date format is YYYY-MM-DD.', 'postcal' ) ?></span>
 	</small>
 </p>
 <?php

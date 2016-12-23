@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-29 21:51+0000\n"
+"POT-Creation-Date: 2016-12-23 13:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -14,110 +14,123 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
+#: home/const/repositories/postcal/metabox.php:10
+msgid "Delete"
+msgstr ""
+
 #. Name of the plugin
-#: metabox.php:9 widget.php:17
+#: home/const/repositories/postcal/metabox.php:18
+#: home/const/repositories/postcal/widget.php:17
 msgid "Post Calendar"
 msgstr ""
 
-#: metabox.php:16
-msgid "Link this post to a date."
+#: home/const/repositories/postcal/metabox.php:22
+msgid ""
+"When one of the following dates is selected in the Post Calendar widget, a "
+"link to this post will be displayed."
 msgstr ""
 
-#: metabox.php:21
-msgid "Date"
+#: home/const/repositories/postcal/metabox.php:35
+msgid "Add"
 msgstr ""
 
-#: metabox.php:27
+#: home/const/repositories/postcal/metabox.php:37
 msgid "Save"
 msgstr ""
 
-#: metabox.php:54
-msgid "date not specified"
+#: home/const/repositories/postcal/metabox.php:43
+msgid ""
+"Currently, Internet Explorer and Mozilla Firefox do not support the input "
+"date element."
 msgstr ""
 
-#: widget.php:15
+#: home/const/repositories/postcal/metabox.php:44
+msgid "Date format is YYYY-MM-DD."
+msgstr ""
+
+#: home/const/repositories/postcal/widget.php:15
 msgid ""
 "Displays a calendar widget. When a day is selected, linked posts appear "
 "below."
 msgstr ""
 
-#: widget.php:36
+#: home/const/repositories/postcal/widget.php:36
 msgid "Title"
 msgstr ""
 
-#: widget.php:74
+#: home/const/repositories/postcal/widget.php:74
 msgid "January"
 msgstr ""
 
-#: widget.php:75
+#: home/const/repositories/postcal/widget.php:75
 msgid "February"
 msgstr ""
 
-#: widget.php:76
+#: home/const/repositories/postcal/widget.php:76
 msgid "March"
 msgstr ""
 
-#: widget.php:77
+#: home/const/repositories/postcal/widget.php:77
 msgid "April"
 msgstr ""
 
-#: widget.php:78
+#: home/const/repositories/postcal/widget.php:78
 msgid "May"
 msgstr ""
 
-#: widget.php:79
+#: home/const/repositories/postcal/widget.php:79
 msgid "June"
 msgstr ""
 
-#: widget.php:80
+#: home/const/repositories/postcal/widget.php:80
 msgid "July"
 msgstr ""
 
-#: widget.php:81
+#: home/const/repositories/postcal/widget.php:81
 msgid "August"
 msgstr ""
 
-#: widget.php:82
+#: home/const/repositories/postcal/widget.php:82
 msgid "September"
 msgstr ""
 
-#: widget.php:83
+#: home/const/repositories/postcal/widget.php:83
 msgid "October"
 msgstr ""
 
-#: widget.php:84
+#: home/const/repositories/postcal/widget.php:84
 msgid "November"
 msgstr ""
 
-#: widget.php:85
+#: home/const/repositories/postcal/widget.php:85
 msgid "December"
 msgstr ""
 
-#: widget.php:92
+#: home/const/repositories/postcal/widget.php:92
 msgid "Sun"
 msgstr ""
 
-#: widget.php:93
+#: home/const/repositories/postcal/widget.php:93
 msgid "Mon"
 msgstr ""
 
-#: widget.php:94
+#: home/const/repositories/postcal/widget.php:94
 msgid "Tue"
 msgstr ""
 
-#: widget.php:95
+#: home/const/repositories/postcal/widget.php:95
 msgid "Wed"
 msgstr ""
 
-#: widget.php:96
+#: home/const/repositories/postcal/widget.php:96
 msgid "Thu"
 msgstr ""
 
-#: widget.php:97
+#: home/const/repositories/postcal/widget.php:97
 msgid "Fri"
 msgstr ""
 
-#: widget.php:98
+#: home/const/repositories/postcal/widget.php:98
 msgid "Sat"
 msgstr ""
 
@@ -125,4 +138,12 @@ msgstr ""
 msgid ""
 "Links selected posts to a date and displays them in a relevant calendar "
 "widget."
+msgstr ""
+
+#. URI of the plugin
+msgid "https://github.com/constracti/postcal"
+msgstr ""
+
+#. Author of the plugin
+msgid "constracti"
 msgstr ""

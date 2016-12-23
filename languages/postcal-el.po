@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Post Calendar\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-29 19:46+0000\n"
-"PO-Revision-Date: 2016-09-29 19:47+0000\n"
+"POT-Creation-Date: 2016-12-23 13:28+0000\n"
+"PO-Revision-Date: 2016-12-23 13:30+0000\n"
 "Last-Translator: constracti <constracti@gmail.com>\n"
 "Language-Team: Greek\n"
 "Language: el\n"
@@ -13,28 +13,46 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
+#: home/const/repositories/postcal/metabox.php:44
+msgid "Date format is YYYY-MM-DD."
+msgstr "Η μορφή της ημερομηνίας είναι ΕΕΕΕ-ΜΜ-ΗΗ."
+
+#: home/const/repositories/postcal/metabox.php:10
+msgid "Delete"
+msgstr "Διαγραφή"
+
 #. Name of the plugin
-#: metabox.php:9 widget.php:17
+#: home/const/repositories/postcal/metabox.php:18
+#: home/const/repositories/postcal/widget.php:17
 msgid "Post Calendar"
 msgstr "Ημερολόγιο Δημοσιεύσεων"
 
-#: metabox.php:16
-msgid "Link this post to a date."
-msgstr "Σύνδεσε αυτή τη δημοσίευση με μία ημερομηνία."
+#: home/const/repositories/postcal/metabox.php:22
+msgid ""
+"When one of the following dates is selected in the Post Calendar widget, a "
+"link to this post will be displayed."
+msgstr ""
+"Όταν μία από τις ακόλουθες ημερομηνίες είναι επιλεγμένη στη μικροεφαρμογή "
+"Ημερολόγιο Δημοσιεύσεων, θα προβάλλεται ένας σύνδεσμος προς την τρέχουσα "
+"δημοσίευση."
 
-#: metabox.php:21
-msgid "Date"
-msgstr "Ημερομηνία"
+#: home/const/repositories/postcal/metabox.php:35
+msgid "Add"
+msgstr "Προσθήκη"
 
-#: metabox.php:27
+#: home/const/repositories/postcal/metabox.php:37
 msgid "Save"
 msgstr "Αποθήκευση"
 
-#: metabox.php:54
-msgid "date not specified"
-msgstr "μη καθορισμένη ημερομηνία"
+#: home/const/repositories/postcal/metabox.php:43
+msgid ""
+"Currently, Internet Explorer and Mozilla Firefox do not support the input "
+"date element."
+msgstr ""
+"Προς το παρόν, ο Internet Explorer και ο Mozilla Firefox δεν υποστηρίζουν το "
+"στοιχείο εισόδου ημερομηνίας."
 
-#: widget.php:15
+#: home/const/repositories/postcal/widget.php:15
 msgid ""
 "Displays a calendar widget. When a day is selected, linked posts appear "
 "below."
@@ -42,83 +60,83 @@ msgstr ""
 "Απεικονίζει μία μικροεφαρμογή ημερολογίου. Όταν μία ημέρα είναι επιλεγμένη, "
 "οι συνδεδεμένες αναρτήσεις εμφανίζονται παρακάτω."
 
-#: widget.php:36
+#: home/const/repositories/postcal/widget.php:36
 msgid "Title"
 msgstr "Τίτλος"
 
-#: widget.php:74
+#: home/const/repositories/postcal/widget.php:74
 msgid "January"
 msgstr "Ιανουάριος"
 
-#: widget.php:75
+#: home/const/repositories/postcal/widget.php:75
 msgid "February"
 msgstr "Φεβρουάριος"
 
-#: widget.php:76
+#: home/const/repositories/postcal/widget.php:76
 msgid "March"
 msgstr "Μάρτιος"
 
-#: widget.php:77
+#: home/const/repositories/postcal/widget.php:77
 msgid "April"
 msgstr "Απρίλιος"
 
-#: widget.php:78
+#: home/const/repositories/postcal/widget.php:78
 msgid "May"
 msgstr "Μάιος"
 
-#: widget.php:79
+#: home/const/repositories/postcal/widget.php:79
 msgid "June"
 msgstr "Ιούνιος"
 
-#: widget.php:80
+#: home/const/repositories/postcal/widget.php:80
 msgid "July"
 msgstr "Ιούλιος"
 
-#: widget.php:81
+#: home/const/repositories/postcal/widget.php:81
 msgid "August"
 msgstr "Αύγουστος"
 
-#: widget.php:82
+#: home/const/repositories/postcal/widget.php:82
 msgid "September"
 msgstr "Σεπτέμβριος"
 
-#: widget.php:83
+#: home/const/repositories/postcal/widget.php:83
 msgid "October"
 msgstr "Οκτώβριος"
 
-#: widget.php:84
+#: home/const/repositories/postcal/widget.php:84
 msgid "November"
 msgstr "Νοέμβριος"
 
-#: widget.php:85
+#: home/const/repositories/postcal/widget.php:85
 msgid "December"
 msgstr "Δεκέμβριος"
 
-#: widget.php:92
+#: home/const/repositories/postcal/widget.php:92
 msgid "Sun"
 msgstr "Κυ"
 
-#: widget.php:93
+#: home/const/repositories/postcal/widget.php:93
 msgid "Mon"
 msgstr "Δε"
 
-#: widget.php:94
+#: home/const/repositories/postcal/widget.php:94
 msgid "Tue"
 msgstr "Τρ"
 
-#: widget.php:95
+#: home/const/repositories/postcal/widget.php:95
 msgid "Wed"
 msgstr "Τε"
 
-#: widget.php:96
+#: home/const/repositories/postcal/widget.php:96
 msgid "Thu"
 msgstr "Πε"
 
-#: widget.php:97
+#: home/const/repositories/postcal/widget.php:97
 msgid "Fri"
 msgstr "Πα"
 
-#: widget.php:98
+#: home/const/repositories/postcal/widget.php:98
 msgid "Sat"
 msgstr "Σα"
 
@@ -129,3 +147,11 @@ msgid ""
 msgstr ""
 "Συνδέει επιλεγμένες δημοσιεύσεις με μία ημερομηνία και τις προβάλλει σε "
 "σχετικό ημερολόγιο."
+
+#. URI of the plugin
+msgid "https://github.com/constracti/postcal"
+msgstr "https://github.com/constracti/postcal"
+
+#. Author of the plugin
+msgid "constracti"
+msgstr "constracti"
