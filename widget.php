@@ -23,7 +23,9 @@ class postcal_widget extends WP_Widget {
 		echo $args['before_widget'] . "\n";
 		if ( !is_null( $instance['title'] ) )
 			echo $args['before_title'] . esc_html( $instance['title'] ) . $args['after_title'] . "\n";
-		echo sprintf( '<div class="postcal-container" data-action="%s"></div>', admin_url( 'admin-ajax.php?action=postcal_widget' ) ) . "\n";
+		echo sprintf( '<div class="postcal-widget" data-action="%s">', admin_url( 'admin-ajax.php?action=postcal-widget' ) ) . "\n";
+		postcal_widget_content();
+		echo '</div>' . "\n";
 		echo $args['after_widget'] . "\n";
 	}
 
@@ -65,8 +67,8 @@ add_action( 'widgets_init', function() {
 } );
 
 add_action( 'wp_enqueue_scripts', function() {
-	wp_enqueue_script( 'postcal_widget_script', plugins_url( 'widget.js', __FILE__ ), array( 'jquery' ) );
 	wp_enqueue_style( 'postcal_widget_style', plugins_url( 'widget.css', __FILE__ ) );
+	wp_enqueue_script( 'postcal_widget_script', plugins_url( 'widget.js', __FILE__ ), array( 'jquery' ) );
 }, 12 );
 
 function postcal_month( int $month ): string {
@@ -99,11 +101,11 @@ function postcal_weekdays(): array {
 	);
 }
 
-function postcall_widget_callback() {
+function postcal_widget_content( string $curr = '' ) {
 	$dt = new DateTime();
 	$dt->setTimestamp( current_time( 'timestamp' ) );
 	$today = $dt->format( 'Y-m-d' );
-	$curr = DateTime::createFromFormat( 'Y-m-d', sprintf( '%s-%s-01', $_REQUEST['year'] ?? '', $_REQUEST['month'] ?? '' ) );
+	$curr = DateTime::createFromFormat( 'Y-m-d', $curr );
 	if ( $curr !== FALSE )
 		$dt = $curr;
 	$y = intval( $dt->format( 'Y' ) );
@@ -113,21 +115,21 @@ function postcall_widget_callback() {
 	$one_month = new DateInterval( 'P1M' );
 	$prev = new DateTime();
 	$prev->setTimestamp( $dt->getTimestamp() )->sub( $one_month );
-	$prev = sprintf( 'admin-ajax.php?action=postcal_widget&year=%s&month=%s', $prev->format( 'Y' ), $prev->format( 'm' ) );
+	$prev = sprintf( 'admin-ajax.php?action=postcal-widget&year=%s&month=%s', $prev->format( 'Y' ), $prev->format( 'm' ) );
 	$curr = new DateTime();
 	$curr->setTimestamp( $dt->getTimestamp() );
-	$curr = sprintf( 'admin-ajax.php?action=postcal_widget&year=%s&month=%s', $curr->format( 'Y' ), $curr->format( 'm' ) );
+	$curr = sprintf( 'admin-ajax.php?action=postcal-widget&year=%s&month=%s', $curr->format( 'Y' ), $curr->format( 'm' ) );
 	$next = new DateTime();
 	$next->setTimestamp( $dt->getTimestamp() )->add( $one_month );
-	$next = sprintf( 'admin-ajax.php?action=postcal_widget&year=%s&month=%s', $next->format( 'Y' ), $next->format( 'm' ) );
+	$next = sprintf( 'admin-ajax.php?action=postcal-widget&year=%s&month=%s', $next->format( 'Y' ), $next->format( 'm' ) );
 ?>
 <p class="postcal-head">
-	<a class="postcal-navigate postcal-prev" href="<?= admin_url( $prev ) ?>">&laquo;</a>
-	<a class="postcal-navigate" href="<?= admin_url( $curr ) ?>">
+	<a class="postcal-prev" href="<?= admin_url( $prev ) ?>">&laquo;</a>
+	<a class="postcal-curr" href="<?= admin_url( $curr ) ?>">
 		<span><?= esc_html( postcal_month( $m ) ) ?></span>
 		<span><?= esc_html( $y ) ?></span>
 	</a>
-	<a class="postcal-navigate postcal-next" href="<?= admin_url( $next ) ?>">&raquo;</a>
+	<a class="postcal-next" href="<?= admin_url( $next ) ?>">&raquo;</a>
 </p>
 <table>
 	<thead>
@@ -190,7 +192,12 @@ function postcall_widget_callback() {
 ?>
 </div>
 <?php
+}
+
+function postcal_widget_callback() {
+	$curr = sprintf( '%s-%s-01', $_GET['year'] ?? '', $_GET['month'] ?? '' );
+	postcal_widget_content( $curr );
 	exit;
 }
-add_action( 'wp_ajax_postcal_widget', 'postcall_widget_callback' );
-add_action( 'wp_ajax_nopriv_postcal_widget', 'postcall_widget_callback' );
+add_action( 'wp_ajax_postcal-widget', 'postcal_widget_callback' );
+add_action( 'wp_ajax_nopriv_postcal-widget', 'postcal_widget_callback' );

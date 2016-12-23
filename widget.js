@@ -1,18 +1,15 @@
 jQuery( function() {
 
-jQuery( '.postcal-container' ).each( function() {
+jQuery( '.postcal-widget' ).each( function() {
 	var div = jQuery( this );
-	jQuery.get( div.data( 'action' ), function( data ) {
-		div.html( data );
-		init( div );
-	} );
+	init( div );
 } );
 
 
 function init( obj ) {
-	obj.find( '.postcal-navigate' ).click( function() {
+	obj.find( '.postcal-head' ).find( 'a' ).click( function() {
 		var link = jQuery( this );
-		var div = link.parents( '.postcal-container' );
+		var div = link.parents( '.postcal-widget' );
 		jQuery.get( link.prop( 'href' ), function( data ) {
 			div.html( data );
 			init( div );
@@ -21,9 +18,14 @@ function init( obj ) {
 	} );
 	obj.find( '.postcal-nonempty' ).click( function() {
 		var td = jQuery( this );
-		td.parents( '.postcal-container' ).
-		find( '.postcal-post' ).hide().
-		filter( '[data-date="' + td.data( 'date' ) + '"]' ).show();
+		var check = !td.hasClass( 'postcal-active' );
+		var div = td.parents( '.postcal-widget' );
+		var posts = div.find( '.postcal-post' ).hide();
+		div.find( 'td' ).removeClass( 'postcal-active' );
+		if ( check ) {
+			td.addClass( 'postcal-active' );
+			posts.filter( '[data-date="' + td.data( 'date' ) + '"]' ).show();
+		}
 	} );
 }
 

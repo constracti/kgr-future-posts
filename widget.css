@@ -1,55 +1,61 @@
-.postcal-head {
+.postcal-widget .postcal-head {
 	text-align: center;
 }
 
-.postcal-navigate {
+.postcal-widget .postcal-head a {
 	text-decoration: none;
 }
 
-.postcal-prev {
+.postcal-widget .postcal-prev {
 	float: left;
 }
 
-.postcal-next {
+.postcal-widget .postcal-next {
 	float: right;
 }
 
-.postcal-container table {
-	border-collapse: separate;
-	border-color: RoyalBlue;
-	border-radius: 2px;
-	border-style: double;
-	border-width: medium;
+.postcal-widget .postcal-post {
+	display: none;
 }
 
-.postcal-container th, .postcal-container td {
+.postcal-widget table {
+	border-radius: 2px;
+	border-style: solid;
+	border-width: medium;
+	border-color: #1976D2;
+}
+
+.postcal-widget th, .postcal-widget td {
 	border: none;
 	padding: 0px;
 	text-align: center;
 	vertical-align: middle;
 }
 
-.postcal-container th {
-	background-color: SkyBlue;
-	border-bottom-color: RoyalBlue;
+.postcal-widget th {
 	border-bottom-style: solid;
 	border-bottom-width: thin;
+	border-bottom-color: #1976D2;
+	background-color: #2196F3;
+	color: white;
 }
 
-td.postcal-today {
-	background-color: SkyBlue;
-	border-color: RoyalBlue;
-	border-radius: 2px;
-	border-style: solid;
-	border-width: thin;
+.postcal-widget td {
+	background-color: #E3F2FD;
+	color: black;
 }
 
-.postcal-nonempty {
-	color: RoyalBlue;
-	cursor: pointer;
+.postcal-widget .postcal-today {
 	font-weight: bold;
 }
 
-.postcal-post {
-	display: none;
+.postcal-widget .postcal-nonempty {
+	cursor: pointer;
+	background-color: #90CAF9;
+	color: black;
+}
+
+.postcal-widget .postcal-active {
+	background-color: #0D47A1;
+	color: white;
 }
