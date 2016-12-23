@@ -1,29 +1,30 @@
 jQuery( function() {
 
-jQuery( '#postcal-check' ).change( function() {
-	var check = jQuery( this );
-	if ( check.prop( 'checked' ) )
-		jQuery( '#postcal-container' ).show();
-	else
-		jQuery( '#postcal-container' ).hide();
-} ).change();
+jQuery( '.postcal-metabox-delete' ).click( function() {
+	jQuery( this ).parent( '.postcal-metabox-field' ).remove();
+	return false;
+} );
 
-jQuery( '#postcal-save' ).click( function() {
-	var link = jQuery( this );
-	var check = jQuery( '#postcal-check' );
-	var input = jQuery( '#postcal-date' );
-	var spinner = jQuery( '#postcal-spinner' ).addClass( 'is-active' );
-	var data = {};
-	if ( check.prop( 'checked' ) )
-		data.check = check.val();
-	data.date = input.val();
-	jQuery.post( link.prop( 'href' ), data, function( data ) {
-		if ( typeof( data ) === 'object' ) {
-			check.prop( 'checked', data.check ).change();
-			input.val( data.date );
-		} else {
-			alert( data );
-		}
+jQuery( '#postcal-metabox-add' ).click( function() {
+	jQuery( '#postcal-metabox-sample' ).children( '.postcal-metabox-field' ).clone( true ).appendTo( '#postcal-metabox-container' );
+	return false;
+} );
+
+jQuery( '#postcal-metabox-save' ).click( function() {
+	var spinner = jQuery( '#postcal-metabox-spinner' ).addClass( 'is-active' );
+	var url = jQuery( this ).prop( 'href' );
+	var dates = [];
+	jQuery( '#postcal-metabox-container' ).children( '.postcal-metabox-field' ).each( function() {
+		var value = jQuery( this ).children( '.postcal-metabox-input' ).val();
+		if ( value !== '' )
+			dates.push( value );
+		else
+			jQuery( this ).remove();
+	} );
+	var data = {
+		dates: dates,
+	};
+	jQuery.post( url, data, function( data ) {
 		spinner.removeClass( 'is-active' );
 	} );
 	return false;
