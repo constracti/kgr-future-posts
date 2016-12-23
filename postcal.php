@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/constracti/postcal
  * Description: Links selected posts to a date and displays them in a relevant calendar widget.
  * Author: constracti
- * Version: 1.0
+ * Version: 1.1
  * License: GPL2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: postcal
