@@ -22,14 +22,14 @@ add_action( 'add_meta_boxes', function() {
 <p class="dashicons-before dashicons-info"><?= esc_html__( 'When one of the following dates is selected in the Post Calendar widget, a link to this post will be displayed.', 'postcal' ) ?></p>
 <div id="postcal-metabox-container">
 <?php
-	sort( $meta, SORT_STRING );
-	foreach ( $meta as $date )
-		postcal_field( $date );
+		sort( $meta, SORT_STRING );
+		foreach ( $meta as $date )
+			postcal_field( $date );
 ?>
 </div>
 <div id="postcal-metabox-sample">
 <?php
-	postcal_field();
+		postcal_field();
 ?>
 </div>
 <p><a id="postcal-metabox-add" href="#postcal-metabox-add"><?= esc_html__( 'Add', 'postcal' ) ?></a></p>
