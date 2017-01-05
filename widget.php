@@ -5,15 +5,15 @@ if ( !defined( 'ABSPATH' ) )
 
 class postcal_widget extends WP_Widget {
 
-	const INSTANCE = array(
+	const INSTANCE = [
 		'title' => NULL,
-	);
+	];
 
 	public function __construct() {
-		$widget_ops = array(
+		$widget_ops = [
 			'classname' => 'postcal_widget',
 			'description' => __( 'Displays a calendar widget. When a day is selected, linked posts appear below.', 'postcal' ),
-		);
+		];
 		parent::__construct( 'postcal_widget', __( 'Post Calendar', 'postcal' ), $widget_ops );
 	}
 
@@ -56,9 +56,9 @@ class postcal_widget extends WP_Widget {
 		} else {
 			$title = NULL;
 		}
-		return array(
+		return [
 			'title' => $title,
-		);
+		];
 	}
 }
 
@@ -68,7 +68,7 @@ add_action( 'widgets_init', function() {
 
 add_action( 'wp_enqueue_scripts', function() {
 	wp_enqueue_style( 'postcal_widget_style', plugins_url( 'widget.css', __FILE__ ) );
-	wp_enqueue_script( 'postcal_widget_script', plugins_url( 'widget.js', __FILE__ ), array( 'jquery' ) );
+	wp_enqueue_script( 'postcal_widget_script', plugins_url( 'widget.js', __FILE__ ), ['jquery'] );
 }, 12 );
 
 function postcal_month( int $month ): string {
@@ -90,7 +90,7 @@ function postcal_month( int $month ): string {
 }
 
 function postcal_weekdays(): array {
-	return array(
+	return [
 		__( 'Sun', 'postcal' ),
 		__( 'Mon', 'postcal' ),
 		__( 'Tue', 'postcal' ),
@@ -98,7 +98,7 @@ function postcal_weekdays(): array {
 		__( 'Thu', 'postcal' ),
 		__( 'Fri', 'postcal' ),
 		__( 'Sat', 'postcal' ),
-	);
+	];
 }
 
 function postcal_widget_content( string $curr = '' ) {
@@ -142,7 +142,7 @@ function postcal_widget_content( string $curr = '' ) {
 	</thead>
 	<tbody>
 <?php
-	$dates = array();
+	$dates = [];
 	$w = intval( $dt->format( 'w' ) );
 	if ( $w !== 0 ) {
 		echo '<tr>' . "\n";
@@ -151,19 +151,20 @@ function postcal_widget_content( string $curr = '' ) {
 	}
 	while ( intval( $dt->format( 'n' ) ) === $m ) {
 		$format = $dt->format( 'Y-m-d' );
-		$class = array();
+		$class = [];
 		if ( $format === $today )
 			$class[] = 'postcal-today';
 		if ( $w === 0 )
 			echo '<tr>' . "\n";
-		$posts = get_posts( array(
+		$posts = get_posts( [
+			'post_status' => ['publish', 'future'], # can also include 'pending', 'draft' and 'private'
 			'meta_compare' => '=',
 			'meta_key' => 'postcal',
 			'meta_value' => $dt->format( 'Y-m-d' ),
 			'order' => 'ASC',
 			'orderby' => 'title',
 			'post_type' => 'post',
-		) );
+		] );
 		if ( !empty( $posts ) ) {
 			$dates[ $format ] = $posts;
 			$class[] = 'postcal-nonempty';
@@ -187,8 +188,15 @@ function postcal_widget_content( string $curr = '' ) {
 <div class="postcal-foot">
 <?php
 	foreach ( $dates as $date => $posts )
-		foreach ( $posts as $post )
-			echo sprintf( '<p class="postcal-post" data-date="%s"><a href="%s">%s</a></p>', $date, $post->guid, esc_html( $post->post_title ) ) . "\n";
+		foreach ( $posts as $post ) {
+			if ( $post->post_status === 'publish' || current_user_can( 'edit_post', $post->ID ) ) {
+				$url = esc_url( get_home_url( NULL, sprintf( '?p=%d', $post->ID ) ) );
+				$title = sprintf( '<a href="%s">%s</a>', $url, $post->post_title );
+			} else {
+				$title = sprintf( '<span class="postcal-widget-post-title">%s</span>', esc_html( $post->post_title ) );
+			}
+			echo sprintf( '<p class="postcal-post" data-date="%s">%s</p>', $date, $title ) . "\n";
+		}
 ?>
 </div>
 <?php
