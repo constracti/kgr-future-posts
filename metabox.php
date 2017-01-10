@@ -65,8 +65,10 @@ add_action( 'wp_ajax_postcal-metabox', function() {
 		exit;
 	if ( !current_user_can( 'edit_post', $post ) )
 		exit;
-	if ( !array_key_exists( 'dates', $_POST ) )
+	if ( !array_key_exists( 'dates', $_POST ) ) {
+		delete_post_meta( $post, 'postcal' );
 		exit;
+	}
 	$dates = $_POST['dates'];
 	if ( !is_array( $dates ) )
 		exit;
