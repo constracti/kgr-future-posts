@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-23 13:28+0000\n"
+"POT-Creation-Date: 2017-01-10 19:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -54,90 +54,90 @@ msgid ""
 "below."
 msgstr ""
 
-#: home/const/repositories/postcal/widget.php:36
+#: home/const/repositories/postcal/widget.php:38
 msgid "Title"
 msgstr ""
 
-#: home/const/repositories/postcal/widget.php:74
+#: home/const/repositories/postcal/widget.php:76
 msgid "January"
 msgstr ""
 
-#: home/const/repositories/postcal/widget.php:75
+#: home/const/repositories/postcal/widget.php:77
 msgid "February"
 msgstr ""
 
-#: home/const/repositories/postcal/widget.php:76
+#: home/const/repositories/postcal/widget.php:78
 msgid "March"
 msgstr ""
 
-#: home/const/repositories/postcal/widget.php:77
+#: home/const/repositories/postcal/widget.php:79
 msgid "April"
 msgstr ""
 
-#: home/const/repositories/postcal/widget.php:78
+#: home/const/repositories/postcal/widget.php:80
 msgid "May"
 msgstr ""
 
-#: home/const/repositories/postcal/widget.php:79
+#: home/const/repositories/postcal/widget.php:81
 msgid "June"
 msgstr ""
 
-#: home/const/repositories/postcal/widget.php:80
+#: home/const/repositories/postcal/widget.php:82
 msgid "July"
 msgstr ""
 
-#: home/const/repositories/postcal/widget.php:81
+#: home/const/repositories/postcal/widget.php:83
 msgid "August"
 msgstr ""
 
-#: home/const/repositories/postcal/widget.php:82
+#: home/const/repositories/postcal/widget.php:84
 msgid "September"
 msgstr ""
 
-#: home/const/repositories/postcal/widget.php:83
+#: home/const/repositories/postcal/widget.php:85
 msgid "October"
 msgstr ""
 
-#: home/const/repositories/postcal/widget.php:84
+#: home/const/repositories/postcal/widget.php:86
 msgid "November"
 msgstr ""
 
-#: home/const/repositories/postcal/widget.php:85
+#: home/const/repositories/postcal/widget.php:87
 msgid "December"
 msgstr ""
 
-#: home/const/repositories/postcal/widget.php:92
+#: home/const/repositories/postcal/widget.php:94
 msgid "Sun"
 msgstr ""
 
-#: home/const/repositories/postcal/widget.php:93
+#: home/const/repositories/postcal/widget.php:95
 msgid "Mon"
 msgstr ""
 
-#: home/const/repositories/postcal/widget.php:94
+#: home/const/repositories/postcal/widget.php:96
 msgid "Tue"
 msgstr ""
 
-#: home/const/repositories/postcal/widget.php:95
+#: home/const/repositories/postcal/widget.php:97
 msgid "Wed"
 msgstr ""
 
-#: home/const/repositories/postcal/widget.php:96
+#: home/const/repositories/postcal/widget.php:98
 msgid "Thu"
 msgstr ""
 
-#: home/const/repositories/postcal/widget.php:97
+#: home/const/repositories/postcal/widget.php:99
 msgid "Fri"
 msgstr ""
 
-#: home/const/repositories/postcal/widget.php:98
+#: home/const/repositories/postcal/widget.php:100
 msgid "Sat"
 msgstr ""
 
 #. Description of the plugin
 msgid ""
-"Links selected posts to a date and displays them in a relevant calendar "
-"widget."
+"Registers a calendar widget with links to associated posts. Links are "
+"filtered by a selected day. Each post may appear in one or more dates."
 msgstr ""
 
 #. URI of the plugin

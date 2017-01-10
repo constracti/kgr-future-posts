@@ -2,9 +2,9 @@
 /*
  * Plugin Name: Post Calendar
  * Plugin URI: https://github.com/constracti/postcal
- * Description: Register a calendar widget with links to associated posts. Links are filtered by a selected day. Each post may appear in one or more days.
+ * Description: Registers a calendar widget with links to associated posts. Links are filtered by a selected day. Each post may appear in one or more dates.
  * Author: constracti
- * Version: 1.2
+ * Version: 1.2.1
  * License: GPL2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: postcal

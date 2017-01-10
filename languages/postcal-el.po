@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Post Calendar\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-23 13:28+0000\n"
-"PO-Revision-Date: 2016-12-23 13:30+0000\n"
+"POT-Creation-Date: 2017-01-10 19:48+0000\n"
+"PO-Revision-Date: 2017-01-10 19:48+0000\n"
 "Last-Translator: constracti <constracti@gmail.com>\n"
 "Language-Team: Greek\n"
 "Language: el\n"
@@ -13,9 +13,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: home/const/repositories/postcal/metabox.php:44
-msgid "Date format is YYYY-MM-DD."
-msgstr "Η μορφή της ημερομηνίας είναι ΕΕΕΕ-ΜΜ-ΗΗ."
+#. Description of the plugin
+msgid ""
+"Registers a calendar widget with links to associated posts. Links are "
+"filtered by a selected day. Each post may appear in one or more dates."
+msgstr ""
+"Δηλώνει μία μικροεφαρμογή ημερολογίου με συνδέσμους προς συσχετισμένες "
+"δημοσιεύσεις. Οι σύνδεσμοι φιλτράρονται ανάλογα με μία επιλεγμένη ημέρα. "
+"Κάθε δημοσίευση επιτρέπεται να εμφανίζεται σε μία ή και περισσότερες "
+"ημερομηνίες."
 
 #: home/const/repositories/postcal/metabox.php:10
 msgid "Delete"
@@ -52,6 +58,10 @@ msgstr ""
 "Προς το παρόν, ο Internet Explorer και ο Mozilla Firefox δεν υποστηρίζουν το "
 "στοιχείο εισόδου ημερομηνίας."
 
+#: home/const/repositories/postcal/metabox.php:44
+msgid "Date format is YYYY-MM-DD."
+msgstr "Η μορφή της ημερομηνίας είναι ΕΕΕΕ-ΜΜ-ΗΗ."
+
 #: home/const/repositories/postcal/widget.php:15
 msgid ""
 "Displays a calendar widget. When a day is selected, linked posts appear "
@@ -60,93 +70,85 @@ msgstr ""
 "Απεικονίζει μία μικροεφαρμογή ημερολογίου. Όταν μία ημέρα είναι επιλεγμένη, "
 "οι συνδεδεμένες αναρτήσεις εμφανίζονται παρακάτω."
 
-#: home/const/repositories/postcal/widget.php:36
+#: home/const/repositories/postcal/widget.php:38
 msgid "Title"
 msgstr "Τίτλος"
 
-#: home/const/repositories/postcal/widget.php:74
+#: home/const/repositories/postcal/widget.php:76
 msgid "January"
 msgstr "Ιανουάριος"
 
-#: home/const/repositories/postcal/widget.php:75
+#: home/const/repositories/postcal/widget.php:77
 msgid "February"
 msgstr "Φεβρουάριος"
 
-#: home/const/repositories/postcal/widget.php:76
+#: home/const/repositories/postcal/widget.php:78
 msgid "March"
 msgstr "Μάρτιος"
 
-#: home/const/repositories/postcal/widget.php:77
+#: home/const/repositories/postcal/widget.php:79
 msgid "April"
 msgstr "Απρίλιος"
 
-#: home/const/repositories/postcal/widget.php:78
+#: home/const/repositories/postcal/widget.php:80
 msgid "May"
 msgstr "Μάιος"
 
-#: home/const/repositories/postcal/widget.php:79
+#: home/const/repositories/postcal/widget.php:81
 msgid "June"
 msgstr "Ιούνιος"
 
-#: home/const/repositories/postcal/widget.php:80
+#: home/const/repositories/postcal/widget.php:82
 msgid "July"
 msgstr "Ιούλιος"
 
-#: home/const/repositories/postcal/widget.php:81
+#: home/const/repositories/postcal/widget.php:83
 msgid "August"
 msgstr "Αύγουστος"
 
-#: home/const/repositories/postcal/widget.php:82
+#: home/const/repositories/postcal/widget.php:84
 msgid "September"
 msgstr "Σεπτέμβριος"
 
-#: home/const/repositories/postcal/widget.php:83
+#: home/const/repositories/postcal/widget.php:85
 msgid "October"
 msgstr "Οκτώβριος"
 
-#: home/const/repositories/postcal/widget.php:84
+#: home/const/repositories/postcal/widget.php:86
 msgid "November"
 msgstr "Νοέμβριος"
 
-#: home/const/repositories/postcal/widget.php:85
+#: home/const/repositories/postcal/widget.php:87
 msgid "December"
 msgstr "Δεκέμβριος"
 
-#: home/const/repositories/postcal/widget.php:92
+#: home/const/repositories/postcal/widget.php:94
 msgid "Sun"
 msgstr "Κυ"
 
-#: home/const/repositories/postcal/widget.php:93
+#: home/const/repositories/postcal/widget.php:95
 msgid "Mon"
 msgstr "Δε"
 
-#: home/const/repositories/postcal/widget.php:94
+#: home/const/repositories/postcal/widget.php:96
 msgid "Tue"
 msgstr "Τρ"
 
-#: home/const/repositories/postcal/widget.php:95
+#: home/const/repositories/postcal/widget.php:97
 msgid "Wed"
 msgstr "Τε"
 
-#: home/const/repositories/postcal/widget.php:96
+#: home/const/repositories/postcal/widget.php:98
 msgid "Thu"
 msgstr "Πε"
 
-#: home/const/repositories/postcal/widget.php:97
+#: home/const/repositories/postcal/widget.php:99
 msgid "Fri"
 msgstr "Πα"
 
-#: home/const/repositories/postcal/widget.php:98
+#: home/const/repositories/postcal/widget.php:100
 msgid "Sat"
 msgstr "Σα"
-
-#. Description of the plugin
-msgid ""
-"Links selected posts to a date and displays them in a relevant calendar "
-"widget."
-msgstr ""
-"Συνδέει επιλεγμένες δημοσιεύσεις με μία ημερομηνία και τις προβάλλει σε "
-"σχετικό ημερολόγιο."
 
 #. URI of the plugin
 msgid "https://github.com/constracti/postcal"
