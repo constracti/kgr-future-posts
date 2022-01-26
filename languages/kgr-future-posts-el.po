@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: KGR Future Posts\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-26 19:09+0000\n"
+"PO-Revision-Date: 2022-01-26 19:14+0000\n"
+"Last-Translator: \n"
+"Language-Team: Ελληνικά\n"
+"Language: el\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.7; wp-5.8.3\n"
+"X-Domain: kgr-future-posts"
+
+#: tags.php:164 dates.php:148
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+#. Author of the plugin
+msgid "constracti"
+msgstr ""
+
+#: dates.php:143
+msgid "Date"
+msgstr "Ημερομηνία"
+
+#: dates.php:110
+msgid "Dates"
+msgstr "Ημερομηνίες"
+
+#: tags.php:128 dates.php:126
+msgid "Delete"
+msgstr "Διαγραφή"
+
+#: dates.php:125
+#, php-format
+msgid "Delete date %s?"
+msgstr "Διαγραφή ημερομηνίας %s;"
+
+#: tags.php:127
+#, php-format
+msgid "Delete tag %s?"
+msgstr "Διαγραφή ετικέτας %s;"
+
+#. Author URI of the plugin
+msgid "https://github.com/constracti"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://github.com/constracti/kgr-future-posts"
+msgstr ""
+
+#: tags.php:89 dates.php:98
+msgid "Insert"
+msgstr "Προσθήκη"
+
+#. Name of the plugin
+#: dates.php:159 index.php:83 index.php:84 index.php:91
+msgid "KGR Future Posts"
+msgstr ""
+
+#. Description of the plugin
+msgid "Order query of specific tag by a date post meta field."
+msgstr ""
+
+#: tags.php:100
+msgid "Posts"
+msgstr "Άρθρα"
+
+#: tags.php:74 dates.php:82
+msgid "Refresh"
+msgstr "Ανανέωση"
+
+#: tags.php:172 index.php:120
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+#: tags.php:163 dates.php:147
+msgid "Submit"
+msgstr "Υποβολή"
+
+#: tags.php:99 tags.php:150
+msgid "Tag"
+msgstr "Ετικέτα"
+
+#: tags.php:119
+msgid "View"
+msgstr "Προβολή"

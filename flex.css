@@ -1,0 +1,28 @@
+.kgr-future-posts-flex-row {
+	display: flex;
+}
+.kgr-future-posts-flex-col {
+	display: flex;
+	flex-direction: column;
+}
+.kgr-future-posts-flex-wrap {
+	flex-wrap: wrap;
+}
+.kgr-future-posts-flex-justify-start {
+	justify-content: start;
+}
+.kgr-future-posts-flex-justify-between {
+	justify-content: space-between;
+}
+.kgr-future-posts-flex-justify-end {
+	justify-content: end;
+}
+.kgr-future-posts-flex-align-center {
+	align-items: center;
+}
+.kgr-future-posts-flex-grow {
+	flex-grow: 1;
+}
+.kgr-future-posts-flex-noshrink {
+	flex-shrink: 0;
+}

@@ -1,0 +1,9 @@
+.kgr-future-posts-root {
+	padding: 8px;
+}
+.kgr-future-posts-root .kgr-future-posts-leaf {
+	margin: 8px;
+}
+.kgr-future-posts-root-border {
+	border: thin solid #c3c4c7;
+}
