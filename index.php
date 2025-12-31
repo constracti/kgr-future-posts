@@ -4,7 +4,7 @@
  * Plugin Name: KGR Future Posts
  * Plugin URI: https://github.com/constracti/kgr-future-posts
  * Description: Order query of specific tag by a date post meta field.
- * Version: 2.0
+ * Version: 2.0.1
  * Requires PHP: 8.0
  * Author: constracti
  * Author URI: https://github.com/constracti
